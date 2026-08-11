@@ -1,40 +1,36 @@
 # Content & Asset Checklist for letsdobusiness
 
 Everything we need from the client to finish the one-pager.
-Items marked *(placeholder live)* are currently filled with dummy content on the site.
+Updated after receiving the logo and the founder's CV.
 
 ## 1. Brand assets
 
-- [ ] Logo — SVG or high-res PNG, ideally both a full version and an icon/monogram
-- [ ] Official brand colors (we used a blue palette as a placeholder — confirm or replace)
-- [ ] Official font, if any (currently Inter)
-- [ ] Favicon preference (currently a temporary "lb" monogram)
+- [x] Logo — received (`assets/img/ldb-logo.png`, web-optimized; original kept)
+- [ ] Official brand colors — the logo uses dark grey / red / orange / olive green.
+      The site currently uses a blue palette — keep blue, or switch to the logo colors?
+- [x] Favicon — created from the logo's three-circle motif (confirm it works for you)
 
 ## 2. Copy / text content
 
-- [ ] Tagline or one-line pitch for the hero section *(placeholder live)*
-- [ ] Short intro paragraph (2–3 sentences) for the hero *(placeholder live)*
-- [ ] List of actual services with a 1–2 sentence description each *(placeholder live)*
-- [ ] About text: company story, founder background, approach *(placeholder live)*
-- [ ] Real numbers for the stats grid: years of experience, projects delivered,
-      industries served, client retention *(placeholder live)*
+- [x] Hero tagline and intro — drafted from the CV (please review wording)
+- [x] Services — drafted from the CV: investment planning, EU/national co-funding,
+      start-up mentoring (please review)
+- [x] About text — drafted from the CV (please review)
+- [x] Stats — 20+ years, 170+ SMEs, €95m+ investments, 35+ start-ups (from CV)
+- [ ] Founder's full name — the CV extract didn't include it
 - [ ] Language: Greek, English, or bilingual? (site is English-only for now)
 
 ## 3. Previous projects
 
-For each of 3–6 projects:
-
-- [ ] Sector/industry label
-- [ ] Project title
-- [ ] 2–3 sentence description with a concrete result
-- [ ] Permission to name the client, or keep anonymous
-- [ ] Optional: a photo or image per project
+- [x] Project entries — drafted from the CV: Alpha Estate, SME co-funding track record,
+      RIS3 Western Macedonia, EU interregional projects (please review)
+- [ ] Confirm we may name Alpha Estate publicly on the site
+- [ ] Optional: a photo per project (winery, hotel, etc.)
 
 ## 4. Photos & imagery
 
-- [ ] Founder/team portrait(s)
-- [ ] Office or working photos (optional, for hero or about section)
-- [ ] Client logos, if we may show them
+- [ ] Founder portrait
+- [ ] Office or working photos (optional)
 
 ## 5. Contact details
 
