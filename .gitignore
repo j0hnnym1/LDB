@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build output (compiled CSS is committed so the site deploys as-is;
+# uncomment the line below if you build during CI instead)
+# css/style.css
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
