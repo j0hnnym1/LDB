@@ -55,7 +55,7 @@ h1 { font-size: clamp(64px, 7.6vw, 116px); font-weight: 800; letter-spacing: -.0
 .button-primary:hover { background: #557254; }
 .button-outline { border-color: var(--color-brand-dark); }
 .button-outline:hover { background: var(--color-brand-light); }
-.hero-cycle { position: absolute; width: 1380px; height: 1380px; left: -195px; top: -930px; pointer-events: none; }
+.hero-cycle { position: absolute; width: 1104px; height: 1104px; left: -156px; top: -744px; pointer-events: none; }
 .hero-cycle svg { display: block; width: 100%; height: 100%; overflow: visible; }
 .cycle-track { stroke: var(--color-brand); stroke-opacity: .18; stroke-width: 1; vector-effect: non-scaling-stroke; }
 .cycle-ring { transform-origin: 80px 80px; animation: cycle-turn 18s linear infinite; }
@@ -151,7 +151,7 @@ h2 { font-size: clamp(30px, 3.1vw, 46px); font-weight: 800; line-height: 1.2; le
   .hero-copy > p { font-size: 14px; }
   .hero-copy .hero-note { font-size: 11px; }
   .hero-actions { gap: 10px; margin-top: 25px; }
-  .hero-cycle { width: 960px; height: 960px; left: -165px; top: -690px; }
+  .hero-cycle { width: 768px; height: 768px; left: -132px; top: -552px; }
   .dot-pattern { bottom: 25px; height: 40px; width: 100px; }
   .track-record { grid-template-columns: repeat(2,1fr); gap: 28px 15px; padding-block: 30px; }
   .track-record > div { padding-left: 20px; }
