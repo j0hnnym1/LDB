@@ -1,7 +1,7 @@
 # Consultant One-Pager
 
 A static one-page website for an independent consultant. Plain HTML + Tailwind CSS,
-no JavaScript framework, no animations.
+no JavaScript framework. A small script handles navigation and project filters.
 
 ## Project structure
 
@@ -10,6 +10,7 @@ no JavaScript framework, no animations.
 ├── src/css/input.css   # Tailwind entry point: theme tokens (colors, font)
 ├── css/style.css       # Compiled CSS (generated — do not edit by hand)
 ├── assets/img/         # Favicon and images
+├── assets/js/site.js   # Navigation and project filtering
 ├── package.json        # Build scripts and dev dependencies
 └── .gitignore
 ```
@@ -48,5 +49,5 @@ The site is fully static — any static host works:
 
 ## Customizing
 
-- Colors and font: edit the `@theme` block in `src/css/input.css`, then rebuild.
+- Colors and font: edit the `:root` block in `src/css/input.css`, then rebuild.
 - Content: all sections live in `index.html` (hero, services, projects, about, contact).

@@ -11,119 +11,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-white font-sans text-brand-dark antialiased">
-
-  <!-- Header -->
-  <header class="border-b border-brand-light">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-      <a href="#"><img src="assets/img/ldb-logo.png" alt="letsdobusiness — Strategic Management" class="h-10 w-auto" /></a>
-      <nav class="hidden items-center gap-8 text-sm font-medium sm:flex">
-        <a href="#services" class="hover:text-brand">Services</a>
-        <a href="#projects" class="hover:text-brand">Projects</a>
-        <a href="#about" class="hover:text-brand">About</a>
-        <a href="#contact" class="rounded-full bg-brand px-4 py-2 text-white hover:bg-brand-dark">Get in touch</a>
-      </nav>
-    </div>
+<body>
+  <header class="site-header shell">
+    <a class="header-location" href="#contact">Ptolemaida, Greece <span>Est. 2004</span></a>
+    <a class="brand-logo" href="#" aria-label="letsdobusiness home"><img src="assets/img/ldb-logo.png" alt="letsdobusiness — Strategic Management" /></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="site-menu" class="site-menu" aria-label="Main navigation" hidden>
+      <a href="#projects">Our work</a><a href="#services">Services</a><a href="#about">About us</a><a href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-
-  <!-- Hero -->
-  <section class="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-    <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-brand">Strategic Management Services — Ptolemaida, Greece</p>
-    <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
-      Turning co-funded programmes into real investments.
-    </h1>
-    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-brand-dark/70">
-      letsdobusiness helps SMEs plan, fund, and implement investment projects — from
-      business plans and start-ups to national and EU co-funded programmes. Since 2004,
-      we have enabled more than 170 businesses to secure investments exceeding €95 million.
-    </p>
-    <div class="mt-10 flex flex-wrap gap-4">
-      <a href="#contact" class="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white hover:bg-brand-dark">Work with us</a>
-      <a href="#projects" class="rounded-full border border-brand px-6 py-3 text-sm font-semibold text-brand hover:bg-brand-light">See previous projects</a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="bg-brand-light">
-    <div class="mx-auto max-w-6xl px-6 py-20">
-      <h2 class="text-3xl font-bold tracking-tight">What we do</h2>
-      <p class="mt-3 max-w-2xl text-brand-dark/70">
-        Technical assistance and strategic management for SMEs, from the first business
-        plan to a completed investment.
-      </p>
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-2xl bg-white p-8 shadow-sm">
-          <h3 class="text-lg font-semibold text-brand">Investment Planning &amp; Implementation</h3>
-          <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-            End-to-end support for investment projects: business plan preparation, funding
-            application, and hands-on implementation for enterprises across sectors — from
-            wine and agri-food to commerce, IT, and energy.
-          </p>
-        </div>
-        <div class="rounded-2xl bg-white p-8 shadow-sm">
-          <h3 class="text-lg font-semibold text-brand">EU &amp; National Co-funding</h3>
-          <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-            Deep expertise in national and EU Structural Funds: we identify the right
-            programme, build the application, and manage the project through to completion
-            — for new businesses and facility renovations alike.
-          </p>
-        </div>
-        <div class="rounded-2xl bg-white p-8 shadow-sm">
-          <h3 class="text-lg font-semibold text-brand">Start-up Strategy &amp; Mentoring</h3>
-          <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-            Strategic consulting and mentoring for first-time entrepreneurs — more than 35
-            young founders guided from idea to a running business.
-          </p>
+  <main>
+    <section class="hero">
+      <div class="hero-orbit" aria-hidden="true"><i></i></div>
+      <div class="shell hero-inner">
+        <p class="eyebrow">Strategy. Funding. Growth.</p>
+        <div class="hero-grid">
+          <h1>Ideas into<br><span class="outline">real impact.</span></h1>
+          <div class="hero-copy">
+            <p>Every great investment starts with an idea. We help businesses turn theirs into reality — with strategic guidance, national and EU co-funding, and hands-on support.</p>
+            <p class="hero-note">Rooted in Greece. Building opportunity since 2004.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#projects">Explore our work <span aria-hidden="true">→</span></a><a class="button button-outline" href="#contact">Let’s do business</a></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="mx-auto max-w-6xl px-6 py-20">
-    <h2 class="text-3xl font-bold tracking-tight">Previous projects</h2>
-    <p class="mt-3 max-w-2xl text-brand-dark/70">
-      A selection of engagements we're proud of.
-    </p>
-    <div class="mt-10 grid gap-6 md:grid-cols-2">
-      <article class="rounded-2xl border border-brand-light p-8">
-        <p class="text-xs font-semibold uppercase tracking-widest text-brand">Wine &amp; Agrifood</p>
-        <h3 class="mt-2 text-xl font-semibold">Alpha Estate — €82m investment programme</h3>
-        <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-          Head of the Investments Department (2017–2024) at the leading Greek winery, leading
-          a 6-person team delivering a new semi-sparkling wine facility, a 5-star hotel, a
-          drinking water plant, and a local quality agrifood products restaurant.
-        </p>
-      </article>
-      <article class="rounded-2xl border border-brand-light p-8">
-        <p class="text-xs font-semibold uppercase tracking-widest text-brand">SME Funding</p>
-        <h3 class="mt-2 text-xl font-semibold">170+ co-funded SME investments</h3>
-        <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-          Technical assistance that enabled more than 170 Greek SMEs to secure and deploy
-          investments exceeding €95 million, through national and EU Structural Funds as
-          well as private capital — for new businesses and renovated production facilities.
-        </p>
-      </article>
-      <article class="rounded-2xl border border-brand-light p-8">
-        <p class="text-xs font-semibold uppercase tracking-widest text-brand">Regional Development</p>
-        <h3 class="mt-2 text-xl font-semibold">Smart Specialization Strategy (RIS3)</h3>
-        <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-          Member of the experts' team for the Smart Specialization Strategy of the Region
-          of Western Macedonia (2014–2020 programming period).
-        </p>
-      </article>
-      <article class="rounded-2xl border border-brand-light p-8">
-        <p class="text-xs font-semibold uppercase tracking-widest text-brand">EU Cooperation</p>
-        <h3 class="mt-2 text-xl font-semibold">Interregional EU-funded projects</h3>
-        <p class="mt-3 text-sm leading-relaxed text-brand-dark/70">
-          Project implementation team member for INACT, LOCFOOD, Histcape, Difass and SMART+,
-          on behalf of the Regional Development Fund of Western Macedonia. Registered EBRD
-          Adviser since 2021.
-        </p>
-      </article>
-    </div>
-  </section>
-
+      <div class="dot-pattern" aria-hidden="true"></div><div class="hero-sphere" aria-hidden="true"></div>
+    </section>
+    <section class="track-record shell" aria-label="Our track record">
+      <div><strong>20<span>+</span></strong><p>Years of experience</p></div><div><strong>170<span>+</span></strong><p>Businesses supported</p></div><div><strong>€95m<span>+</span></strong><p>Investments enabled</p></div><div><strong>35<span>+</span></strong><p>Start-ups guided</p></div>
+    </section>
+    <section id="projects" class="projects shell section-space">
+      <div class="section-heading"><div><p class="eyebrow">Our work</p><h2>Ambition, put into action.</h2></div><p>From a first business plan to regional development.<br>A selection of the work behind the numbers.</p></div>
+      <div class="project-filters" role="group" aria-label="Filter projects by sector">
+        <button class="filter active" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="investment" aria-pressed="false">Wine &amp; agrifood</button><button class="filter" data-filter="funding" aria-pressed="false">SME funding</button><button class="filter" data-filter="regional" aria-pressed="false">Regional development</button><button class="filter" data-filter="cooperation" aria-pressed="false">EU cooperation</button>
+      </div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="project-grid">
+        <article class="project-card" data-category="investment">
+          <div class="project-art art-estate" aria-hidden="true"><div class="art-label">ALPHA<span>ESTATE</span></div><div class="landscape"></div><span class="art-caption">INVESTING IN POSSIBILITY</span></div>
+          <div class="card-body"><div class="card-meta"><span>Wine &amp; agrifood</span><span>2017–2024</span></div><h3>Alpha Estate</h3><p>A €82m investment programme for a leading Greek winery, spanning wine production, hospitality, water, and local food.</p><details><summary>Explore the project <span aria-hidden="true">→</span></summary><p>Head of the Investments Department, leading a 6-person team delivering a new semi-sparkling wine facility, a 5-star hotel, a drinking water plant, and a local quality agrifood products restaurant.</p></details></div>
+        </article>
+        <article class="project-card" data-category="funding">
+          <div class="project-art art-funding" aria-hidden="true"><div class="funding-circles"><i></i><i></i><i></i></div><div class="art-label">170+<span>BUSINESSES. NEW POSSIBILITIES.</span></div></div>
+          <div class="card-body"><div class="card-meta"><span>SME funding</span><span>Greece</span></div><h3>Funding business growth</h3><p>Helping more than 170 Greek SMEs secure and deploy over €95 million in investments, from new ventures to renewed facilities.</p><details><summary>Explore the work <span aria-hidden="true">→</span></summary><p>Technical assistance through national and EU Structural Funds, alongside private capital, supporting new businesses and renovated production facilities across sectors.</p></details></div>
+        </article>
+        <article class="project-card" data-category="regional">
+          <div class="project-art art-regional" aria-hidden="true"><div class="regional-grid"></div><div class="art-label">Local strengths.<br>Shared futures.<span>WESTERN MACEDONIA · RIS3</span></div></div>
+          <div class="card-body"><div class="card-meta"><span>Regional development</span><span>2014–2020</span></div><h3>A strategy for the region</h3><p>Contributing expertise to the Smart Specialization Strategy for Western Macedonia and its next chapter of development.</p><details><summary>Explore the project <span aria-hidden="true">→</span></summary><p>Member of the experts’ team for the Region of Western Macedonia’s Smart Specialization Strategy (RIS3), for the 2014–2020 programming period.</p></details></div>
+        </article>
+        <article class="project-card" data-category="cooperation">
+          <div class="project-art art-cooperation" aria-hidden="true"><div class="cooperation-orbit"></div><div class="art-label">Better,<br>together.<span>INTERREGIONAL COOPERATION</span></div></div>
+          <div class="card-body"><div class="card-meta"><span>EU cooperation</span><span>Europe</span></div><h3>Knowledge across borders</h3><p>Bringing regions and expertise together through European projects that connect local challenges with shared solutions.</p><details><summary>Explore the work <span aria-hidden="true">→</span></summary><p>Project implementation team member for INACT, LOCFOOD, Histcape, Difass and SMART+, on behalf of the Regional Development Fund of Western Macedonia. Registered EBRD Adviser since 2021.</p></details></div>
+        </article>
+      </div>
+    </section>
+    <section id="services" class="services section-space"><div class="shell">
+      <div class="section-heading"><div><p class="eyebrow">What we do</p><h2>With you, at every step.</h2></div><p>Technical assistance and strategic management.<br>From the first idea to a completed investment.</p></div>
+      <div class="service-grid">
+        <article><span class="service-number">01 / PLAN</span><h3>Investment planning<br>&amp; implementation</h3><p>Business plans, funding applications, and hands-on implementation for enterprises across sectors — from wine and agri-food to commerce, IT, and energy.</p></article>
+        <article><span class="service-number">02 / FUND</span><h3>EU &amp; national<br>co-funding</h3><p>We identify the right programme, build the application, and manage the project through to completion, with deep expertise in national and EU Structural Funds.</p></article>
+        <article><span class="service-number">03 / GROW</span><h3>Start-up strategy<br>&amp; mentoring</h3><p>Strategic consulting for first-time entrepreneurs. More than 35 young founders guided from an idea to a running business, with support at every step.</p></article>
+      </div>
+    </div></section>
   <!-- About -->
   <section id="about" class="bg-brand-light">
     <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2">
@@ -182,16 +130,8 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-brand-light">
-    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-brand-dark/60 sm:flex-row">
-      <p>&copy; 2026 letsdobusiness. All rights reserved.</p>
-      <div class="flex gap-6">
-        <a href="#" class="hover:text-brand">LinkedIn</a>
-        <a href="#" class="hover:text-brand">Privacy</a>
-      </div>
-    </div>
-  </footer>
-
+  </main>
+  <footer class="site-footer shell"><a href="#" aria-label="Back to top"><img src="assets/img/ldb-logo.png" alt="letsdobusiness" /></a><p>© 2026 letsdobusiness. All rights reserved.</p><a href="#contact">Let’s start a conversation <span aria-hidden="true">↗</span></a></footer>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
