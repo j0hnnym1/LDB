@@ -16,3 +16,9 @@ Sources: `temp/260927_LDB_Website_material.docx`, `temp/cases.xlsx`, and the sup
 The two screenshot-marked cards are “Funding business growth” and “A strategy for the region”; their generic content is superseded by the detailed case studies. Retain the existing visual identity and hero animation. Use the spreadsheet as the authoritative case text and order.
 
 Verification: production CSS build and JavaScript syntax checks passed. Browser checks matched all 23 case names, headlines, and descriptions against the spreadsheet; exercised all eight filter buttons, logo-to-case links, scroller controls, menu/Escape, and no-JavaScript case details. No browser errors or horizontal overflow at 320, 390, 768, 1024, and 1440 pixels. Desktop/mobile screenshots, the footer, and all 23 logos were visually reviewed. Corrected white-logo contrast and scroller image bounds. No policy, cookie controls, or tracking were added.
+
+## Follow-up layout and motion
+
+- [x] ~~Reorder sections: What we do, Our Work, Clients & Collaborations, About us.~~
+- [x] ~~Add automatic logo scrolling with pause/resume, interaction pauses, and reduced-motion support.~~
+- [x] ~~Verify section order and automatic/manual scrolling on desktop and mobile.~~

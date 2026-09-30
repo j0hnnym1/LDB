@@ -60,6 +60,73 @@ scroller.addEventListener('scroll', updateScrollButtons, { passive: true });
 window.addEventListener('resize', updateScrollButtons);
 updateScrollButtons();
 
+
+// Move gently in both directions, without duplicating client links.
+const clientsSection = scroller.closest('.clients');
+const pauseButton = document.querySelector('.scroll-pause');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let paused = false;
+let hovered = false;
+let visible = false;
+let direction = 1;
+let frame = null;
+let previousTime = null;
+let position = scroller.scrollLeft;
+let resumeAfter = 0;
+
+function canAnimate() {
+  return visible && !document.hidden && !reducedMotion.matches && !paused && !hovered && !clientsSection.contains(document.activeElement);
+}
+function animateClients(time) {
+  frame = null;
+  if (!canAnimate()) return;
+  const elapsed = previousTime === null ? 0 : Math.min(time - previousTime, 50);
+  previousTime = time;
+  const limit = scroller.scrollWidth - scroller.clientWidth;
+  if (time >= resumeAfter && limit > 0) {
+    position = Math.max(0, Math.min(limit, position + direction * elapsed * 0.028));
+    scroller.scrollLeft = position;
+    if (position >= limit) direction = -1;
+    if (position <= 0) direction = 1;
+  } else {
+    position = scroller.scrollLeft;
+  }
+  frame = requestAnimationFrame(animateClients);
+}
+function syncAutoscroll() {
+  if (frame !== null) cancelAnimationFrame(frame);
+  frame = null;
+  previousTime = null;
+  position = scroller.scrollLeft;
+  scroller.classList.toggle('auto-scrolling', !reducedMotion.matches);
+  pauseButton.hidden = reducedMotion.matches;
+  if (canAnimate()) frame = requestAnimationFrame(animateClients);
+}
+pauseButton.addEventListener('click', () => {
+  paused = !paused;
+  pauseButton.setAttribute('aria-pressed', String(paused));
+  pauseButton.setAttribute('aria-label', paused ? 'Resume automatic scrolling' : 'Pause automatic scrolling');
+  pauseButton.textContent = paused ? '▶' : 'Ⅱ';
+  syncAutoscroll();
+});
+clientsSection.addEventListener('pointerenter', event => {
+  if (event.pointerType === 'mouse') { hovered = true; syncAutoscroll(); }
+});
+clientsSection.addEventListener('pointerleave', () => { hovered = false; syncAutoscroll(); });
+clientsSection.addEventListener('focusin', syncAutoscroll);
+clientsSection.addEventListener('focusout', () => requestAnimationFrame(syncAutoscroll));
+for (const eventName of ['pointerdown', 'touchmove', 'wheel']) {
+  scroller.addEventListener(eventName, () => { resumeAfter = performance.now() + 5000; }, { passive: true });
+}
+new IntersectionObserver(entries => {
+  visible = entries[0].isIntersecting;
+  syncAutoscroll();
+}).observe(scroller);
+document.addEventListener('visibilitychange', syncAutoscroll);
+reducedMotion.addEventListener('change', syncAutoscroll);
+window.addEventListener('resize', syncAutoscroll);
+syncAutoscroll();
+
 function revealCase(hash, focus = false) {
   const project = [...projects].find(item => '#' + item.id === hash);
   if (!project) return;
