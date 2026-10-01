@@ -1,0 +1,12 @@
+# GitHub Pages (Jekyll) build settings.
+# Publish only the website itself: internal notes, build sources and
+# tooling files in this repository must not be served on the live site.
+exclude:
+  - README.md
+  - client-checklist.md
+  - implementation-todo.md
+  - package.json
+  - package-lock.json
+  - src/
+  - node_modules/
+  - temp/

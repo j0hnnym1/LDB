@@ -36,16 +36,17 @@ Updated after receiving the logo and the founder's CV.
 
 - [ ] Email address *(placeholder live: info@letsdobusiness.gr)*
 - [ ] Phone number *(placeholder live)*
-- [x] Address: Matsouka 14, 502 00 Ptolemaida
+- [x] Address: received — deliberately not published on the site or in this public repo
 - [ ] Contact form or just email/phone buttons? (form needs a form service, e.g. Formspree)
 - [ ] Google Maps embed for the address — yes/no
 - [ ] Social media links (LinkedIn, etc.)
 
 ## 6. Legal (Greece / EU)
 
-- [ ] Privacy policy text (GDPR — required if we collect any data or use analytics)
+- [x] Privacy & cookie notice — `privacy.html`, linked from the footer (please review)
 - [ ] Company legal name, VAT number (ΑΦΜ) and registry (ΓΕΜΗ) for the footer/imprint
-- [ ] Cookie consent needed? Only if analytics/tracking is added
+- [x] Cookie consent — not needed: the site sets no cookies and loads nothing from third parties.
+      Adding analytics, a form service or a map embed would change this.
 
 ## 7. Domain & technical
 

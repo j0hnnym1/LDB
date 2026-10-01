@@ -7,9 +7,12 @@ no JavaScript framework. A small script handles navigation and project filters.
 
 ```
 ├── index.html          # The entire site (single page)
+├── privacy.html        # Privacy & cookie notice (linked from the footer)
 ├── src/css/input.css   # Tailwind entry point: theme tokens (colors, font)
 ├── css/style.css       # Compiled CSS (generated — do not edit by hand)
+├── assets/fonts/       # Self-hosted Manrope (SIL OFL)
 ├── assets/img/         # Favicon and images
+├── _config.yml         # GitHub Pages: keeps internal files off the live site
 ├── assets/js/site.js   # Navigation and project filtering
 ├── package.json        # Build scripts and dev dependencies
 └── .gitignore
@@ -45,7 +48,22 @@ deployed as-is without a build step. Rebuild and commit it whenever you change
 The site is fully static — any static host works:
 
 - **GitHub Pages**: push to GitHub, then Settings → Pages → deploy from branch (`main`, root).
-- **Netlify / Vercel**: drag-and-drop the folder, or connect the repo with no build command.
+  `_config.yml` keeps internal notes (`*.md`), `package*.json` and `src/` off the live site.
+- **Netlify / Vercel**: connect the repo with no build command. Do not drag-and-drop the
+  working folder: it would also publish `temp/` (client material) and `node_modules/`.
+  On these hosts `_config.yml` does not apply, so exclude the same files there.
+
+## Privacy and security
+
+The site sets no cookies, uses no browser storage and makes no third-party requests,
+so it needs no cookie banner. `privacy.html` states this publicly, and the
+Content-Security-Policy meta tag in each page enforces it: browsers block any
+request to another domain. Keep it that way:
+
+- Self-host every asset (fonts live in `assets/fonts/`); never link Google Fonts or CDNs.
+- Adding analytics, a form service, a map or a video embed introduces third-party
+  processing (and usually cookies). Update `privacy.html`, the CSP and, if anything is
+  stored on the device, add consent **before** shipping it.
 
 ## Customizing
 
