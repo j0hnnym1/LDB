@@ -1,8 +1,3 @@
-# Consultant One-Pager
-
-A static one-page website for an independent consultant. Plain HTML + Tailwind CSS,
-no JavaScript framework. A small script handles navigation and project filters.
-
 ## Project structure
 
 ```
