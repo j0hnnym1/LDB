@@ -1,0 +1,13 @@
+// Cloudflare Workers deploy settings. The site is plain static files: the build
+// step copies only the public files into dist/, and Wrangler uploads that folder.
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "ldb1",
+  "compatibility_date": "2026-10-01",
+  "build": {
+    "command": "node scripts/build-site.mjs"
+  },
+  "assets": {
+    "directory": "dist"
+  }
+}

@@ -12,3 +12,7 @@ Thumbs.db
 .idea/
 .vscode/
 temp/
+
+# Cloudflare: generated deploy folder and Wrangler local state
+dist/
+.wrangler/

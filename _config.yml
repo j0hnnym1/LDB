@@ -10,3 +10,6 @@ exclude:
   - src/
   - node_modules/
   - temp/
+  - scripts/
+  - wrangler.jsonc
+  - dist/
